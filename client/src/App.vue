@@ -5,8 +5,23 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
+    {{ debtors }}
   </div>
 </template>
+
+<script>
+import debtors from "@/assets/debtors.json";
+export default {
+  name: "app",
+  computed: {
+    debtors() {
+      return debtors.debtors.map(debtors => {
+        return debtors;
+      });
+    }
+  }
+};
+</script>
 
 <style>
 #app {

@@ -1,0 +1,22 @@
+{
+  "debtors": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "address": "123 Main St",
+      "address2": "Apt 2",
+      "city": "Anywhere",
+      "state": "NY",
+      "zip": "12345"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "address": "555 United Ave",
+      "address2": "Upper",
+      "city": "Nowhere",
+      "state": "CA",
+      "zip": "99999"
+    }
+  ]
+}

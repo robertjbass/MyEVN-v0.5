@@ -1,18 +1,29 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/mevn.jpg" width="350" />
-    <HelloWorld msg="Basic Boilerplate Template" />
+    <Debtor />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Debtor from "@/components/Debtor.vue";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    Debtor
+  },
+  props: {
+    debtors: {
+      id: Number,
+      name: String,
+      address: String,
+      address2: String,
+      city: String,
+      state: String,
+      zip: String
+    }
   }
 };
 </script>
