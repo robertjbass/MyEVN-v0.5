@@ -1,32 +1,25 @@
 <template>
-  <div class="debtor" v-bind:id="debtors.id">
-    {{ name }} <br />
-    {{ address }}<br />
-    {{ address2 }}<br />
-    {{ city }}, {{ state }} {{ zip }}
+  <div>
+    <p v-for="debtor in debtors" :key="debtor.id">
+      {{ debtor.id }} {{ debtor.name }} {{ debtor.address }}
+      {{ debtor.address2 }} {{ debtor.city }} {{ debtor.state }}
+      {{ debtor.zip }}
+    </p>
   </div>
 </template>
 
 <script>
-import Debtor from "@/components/Debtor.vue";
 import debtors from "@/assets/debtors.json";
 
 export default {
   name: "Debtor",
-  props: {
-    id: Number,
-    name: String,
-    address: String,
-    address2: String,
-    city: String,
-    state: String,
-    zip: String
+  computed: {
+    debtors() {
+      return debtors.debtors.map(debtors => {
+        return debtors;
+      });
+    }
   }
-  // data() {
-  //   return {
-  //     key: value
-  //   };
-  // }
 };
 </script>
 
