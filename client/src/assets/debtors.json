@@ -17,6 +17,33 @@
       "city": "Nowhere",
       "state": "CA",
       "zip": "99999"
+    },
+    {
+      "id": 3,
+      "name": "Mike Ross",
+      "address": "936 Ellicott Ck",
+      "address2": "15",
+      "city": "Somewhere",
+      "state": "FL",
+      "zip": "34567"
+    },
+    {
+      "id": 4,
+      "name": "James Jamison",
+      "address": "234 South Girard Blvd",
+      "address2": "",
+      "city": "Elsewhere",
+      "state": "TX",
+      "zip": "60309"
+    },
+    {
+      "id": 5,
+      "name": "Bill Williamson",
+      "address": "200 Green Hill Rd",
+      "address2": null,
+      "city": "Wherever",
+      "state": "WA",
+      "zip": "80706"
     }
   ]
 }

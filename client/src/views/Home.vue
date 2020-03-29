@@ -1,17 +1,17 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/mevn.jpg" width="350" />
-    <Debtor />
+    <DebtorList />
   </div>
 </template>
 
 <script>
-import Debtor from "@/components/Debtor.vue";
+import DebtorList from "@/components/DebtorList.vue";
 
 export default {
   name: "home",
   components: {
-    Debtor
+    DebtorList
   }
 };
 </script>

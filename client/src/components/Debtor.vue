@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <p v-for="debtor in debtors" :key="debtor.id">
-      {{ debtor.id }} {{ debtor.name }} {{ debtor.address }}
-      {{ debtor.address2 }} {{ debtor.city }} {{ debtor.state }}
+  <div class="debtorCardclass" v-bind="debtors">
+    <p class="debtorCard" v-for="debtor in debtors" :key="debtor.id">
+      {{ debtor.id }} - {{ debtor.name }}<br />{{ debtor.address }}
+      {{ debtor.address2 }}<br />{{ debtor.city }} {{ debtor.state }}
       {{ debtor.zip }}
     </p>
   </div>
@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+  /* margin: 40px 0 0; */
 }
 ul {
   list-style-type: none;
@@ -41,17 +41,16 @@ a {
 .debtorCard {
   border-style: solid;
   border-width: 1px;
-  padding-bottom: 0%;
   border-radius: 1em;
-  margin: 5px;
-  min-width: 350px;
+  margin: 2% 0 2% 0;
+  padding: 2%;
   flex-grow: 1;
   background-color: slateblue;
+  color: whitesmoke;
 }
 .cardLink,
 a {
   text-decoration: none;
-  color: whitesmoke;
 }
 .debtorCard:hover {
   background: rgba(105, 90, 205, 0.52);
