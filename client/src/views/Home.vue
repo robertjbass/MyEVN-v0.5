@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/mevn.jpg" width="350" />
+    <h3>This is the home page</h3>
+
     <DebtorList />
   </div>
 </template>
@@ -15,3 +16,4 @@ export default {
   }
 };
 </script>
+<style scoped></style>

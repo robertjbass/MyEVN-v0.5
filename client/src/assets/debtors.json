@@ -2,6 +2,8 @@
   "debtors": [
     {
       "id": 1,
+      "filenumber": "123456",
+      "color": "#e17055",
       "name": "John Smith",
       "address": "123 Main St",
       "address2": "Apt 2",
@@ -11,15 +13,19 @@
     },
     {
       "id": 2,
+      "filenumber": "223456",
+      "color": "#00b894",
       "name": "Jane Doe",
       "address": "555 United Ave",
       "address2": "Upper",
       "city": "Nowhere",
       "state": "CA",
-      "zip": "99999"
+      "zip": "98789"
     },
     {
       "id": 3,
+      "filenumber": "323456",
+      "color": "#0984e3",
       "name": "Mike Ross",
       "address": "936 Ellicott Ck",
       "address2": "15",
@@ -29,6 +35,8 @@
     },
     {
       "id": 4,
+      "filenumber": "423456",
+      "color": "#dfe6e9",
       "name": "James Jamison",
       "address": "234 South Girard Blvd",
       "address2": "",
@@ -38,12 +46,25 @@
     },
     {
       "id": 5,
+      "filenumber": "523456",
+      "color": "#fdcb6e",
       "name": "Bill Williamson",
       "address": "200 Green Hill Rd",
       "address2": null,
       "city": "Wherever",
       "state": "WA",
       "zip": "80706"
+    },
+    {
+      "id": 6,
+      "filenumber": "623456",
+      "color": "#d63031",
+      "name": "Alan Jeffery",
+      "address": "240 Blue Blvd",
+      "address2": null,
+      "city": "Overthere",
+      "state": "CA",
+      "zip": "90210"
     }
   ]
 }

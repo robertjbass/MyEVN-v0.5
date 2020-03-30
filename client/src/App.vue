@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link><br />
+      <img alt="Vue logo" src="@/assets/mevn.jpg" width="150" />
     </div>
     <router-view />
   </div>
@@ -17,15 +18,17 @@
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  padding-top: 30px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #74b9ff;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #0984e3;
+  text-decoration: underline;
 }
 </style>
