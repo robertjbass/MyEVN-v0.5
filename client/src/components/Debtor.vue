@@ -4,13 +4,15 @@
       <div class="debtorCard" v-for="debtor in debtors" :key="debtor.id">
         <div class="left">
           <div class="handle" :style="`background-color: ${debtor.color} `">
-            ⋮
+            <br />⋮<br /><br />
           </div>
+          <br />
           Debtor ID: {{ debtor.id }}<br />
           File Number: {{ debtor.filenumber }}<br />
           State: {{ debtor.state }}
         </div>
         <div class="right">
+          <br />
           {{ debtor.name }}<br />
           {{ debtor.address }} {{ debtor.address2 }}<br />
           {{ debtor.city }}, {{ debtor.state }} {{ debtor.zip }}
@@ -48,36 +50,37 @@ li {
   border-style: solid;
   border-width: 1px;
   border-radius: 1em;
-  margin: 1% 0 0 5px;
-  padding: 1% 0;
+  margin: 5px 10px 5px 10px;
+  padding: 0% 0% 0% 0%;
+  border: 2px;
   background-color: #2d3436;
-  color: whitesmoke;
+  color: #b2bec3;
   flex-grow: 1;
   display: flex;
+  border-style: solid;
+  height: 100%;
 }
 .cardLink,
 a {
   text-decoration: none;
 }
 .debtorCard:hover {
-  background: #a29bfe;
-  color: black;
+  background: #a29bfe7c;
 }
 .debtorCardClass {
   display: flex;
 }
 .handle {
-  vertical-align: middle;
   height: 100%;
-  width: 20px;
+  width: 15px;
   text-align: center;
-  font-size: 3rem;
-  margin-right: 2%;
-  margin-left: 2px;
-  border-radius: 1em;
-  color: darkblue;
+  font-size: 1.5rem;
+  margin: 0px 10px 0px 0px;
+  border-radius: 70em 4em 4em 70em;
+  color: black;
   /* Acts as a backup in the event of a color render failure */
   background-color: white;
+  align-self: center;
 }
 .handle:hover {
   cursor: pointer;

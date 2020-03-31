@@ -20,14 +20,9 @@ export default {
   background-color: #2d3436;
   color: whitesmoke;
   border-radius: 1em;
-  padding: 1.5% 2.5%;
+  padding: 1em 1em;
 }
 #backgrad {
-  background-image: linear-gradient(
-    to bottom right,
-    #6c5ce7c9,
-    #6c5ce7,
-    #6c5ce7c9
-  );
+  background-image: linear-gradient(to bottom, #2d3436, black);
 }
 </style>
